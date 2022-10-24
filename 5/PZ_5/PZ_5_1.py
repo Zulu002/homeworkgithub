@@ -1,18 +1,10 @@
-def AddLeftDigit():
-    D = int(input("введите число D >>"))
-    K = int(input("введите число B >>"))
-    A=""
-    a=1
-    while a<2:
-        if D<=9 and D>0:
-            str(print(K,D,A, sep=""))
-            A = int(input("введите число D2 >>"))
-            a+=1
-        elif a>=2:
-            break
-        else:
-            print("error")
-    str(print(K, D, A, sep=""))
+def star(a): #создаём собственную функции
+    b=1
+    c="*"
+    while b<=a: #создаём цикл который работает до значения введенного аргумента
+        print(c)  #выводем *
+        c+="*"    #добовляем *
+        b+=1      #плюс один к начальному значению
 
-
-AddLeftDigit()
+a=int(input("введите число  >> ")) #вводим количнство раз
+star(a) #выводим функцию
